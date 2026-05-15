@@ -3,7 +3,8 @@ thirdParty/
 out/
 bin/
 lib/
-assets/
+assets/fbx
+assets/textures
 *.exe
 *.dll
 *.so
