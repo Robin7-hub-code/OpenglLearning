@@ -41,25 +41,6 @@
 #include"application/assimpInstanceLoader.h"
 
 #include "glframework/framebuffer/framebuffer.h"
-
-/*  
-*┌────────────────────────────────────────────────┐
-*│　目	   标： 立方体贴图
-*│　讲    师： 赵新政(Carma Zhao)
-*	 拆分目标： 
-*				1 制作蒙鼓人（与相机位置相同的box）
-*				2 制作CubeMap纹理对象，创建过程加入到Texture类中
-*				3 使用box的几何数据作为采样的uvw坐标进行采样	
-*				
-				A1: 如果先绘制了天空盒，需要关闭深度写入，防止阻挡后面的物体
-				A2: 在创建texture的时候， 会发生y轴反转的情况，cubemap是不需要反转
-				A3：天空盒必须第一个绘制（当作背景），其他物体随后绘制 
-
-				通用手法：
-					将剪裁空间坐标系的zc恒等于wc，输出zndc恒为1
-					注意：材质当中的depthFunc应该为gl_lequal
-*└───────────────────────────────────────────────┘
-*/
 Renderer* renderer = nullptr;
 Scene* scene = nullptr;
 
