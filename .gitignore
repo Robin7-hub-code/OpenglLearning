@@ -1,0 +1,20 @@
+# Build
+thirdParty/
+out/
+bin/
+lib/
+assets/
+*.exe
+*.dll
+*.so
+*.o
+
+# IDE
+.vscode/
+.idea/
+.vs/
+# Models & Textures (如果太大)
+*.fbx
+*.obj
+*.png
+*.jpg
